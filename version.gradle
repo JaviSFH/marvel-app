@@ -1,0 +1,15 @@
+ext {
+
+    //sdk version
+    sdk_version = 30
+    min_sdk_version = 23
+    buildVersion = "30.0.2"
+
+    versionCode = 1
+    versionName = "1.0-BETA"
+
+    //libraries
+    kotlin_version = "1.4.10"
+    nav_version = "2.3.1"
+
+}

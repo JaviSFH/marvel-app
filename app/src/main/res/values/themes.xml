@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="App.Theme.Marvel" parent="Base.Theme">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Base.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Fonts-->
+        <item name="fontTypeThin">@font/sarabun_thin</item>
+        <item name="fontTypeLight">@font/sarabun_light</item>
+        <item name="fontTypeRegular">@font/sarabun_regular</item>
+        <item name="fontTypeMedium">@font/sarabun_medium</item>
+        <item name="fontTypeBold">@font/sarabun_bold</item>
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/textHeadline1</item>
+        <item name="textAppearanceHeadline2">@style/textHeadline2</item>
+        <item name="textAppearanceHeadline3">@style/textHeadline3</item>
+        <item name="textAppearanceHeadline4">@style/textHeadline4</item>
+        <item name="textAppearanceHeadline5">@style/textHeadline5</item>
+        <item name="textAppearanceHeadline6">@style/textHeadline6</item>
+        <item name="textAppearanceSubtitle1">@style/textSubtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/textSubtitle2</item>
+        <item name="textAppearanceBody1">@style/textBody1</item>
+        <item name="textAppearanceBody2">@style/textBody2</item>
+        <item name="textAppearanceCaption">@style/textCaption</item>
+        <item name="textAppearanceButton">@style/textButton</item>
+        <item name="textAppearanceOverline">@style/textOverline</item>
+        <item name="android:textViewStyle">@style/textTexView</item>
+
+    </style>
+</resources>
