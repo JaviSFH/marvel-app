@@ -1,11 +1,20 @@
 package com.tuppersoft.marvel
 
 import android.app.Application
+import com.facebook.stetho.Stetho
+import com.tuppersoft.marvel.core.extension.logd
+import dagger.hilt.android.HiltAndroidApp
 
-/**
- * Created by Raúl Rodríguez Concepción on 29/10/2020.
- * Talento Mobile
- * raulrcs@gmail.com
- */
-class App: Application()
+@HiltAndroidApp
+class App : Application() {
 
+    override fun onCreate() {
+        super.onCreate()
+
+        "Init app".logd()
+
+        if (BuildConfig.DEBUG) {
+            Stetho.initializeWithDefaults(this)
+        }
+    }
+}

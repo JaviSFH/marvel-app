@@ -6,4 +6,9 @@
         <attr name="fontTypeMedium" format="string" />
         <attr name="fontTypeBold" format="string" />
     </declare-styleable>
+
+
+    <declare-styleable name="customColor">
+        <attr name="colorNameCharactersInCard" format="color" />
+    </declare-styleable>
 </resources>
