@@ -1,11 +1,11 @@
-package com.tuppersoft.domain.models
+package com.tuppersoft.domain.models.character
 
 import androidx.annotation.Keep
 import com.squareup.moshi.Json
 import java.io.Serializable
 
 @Keep
-data class MarvelResult(
+data class CharacterResult(
     @Json(name = "attributionHTML")
     val attributionHTML: String?,
     @Json(name = "attributionText")
@@ -15,11 +15,11 @@ data class MarvelResult(
     @Json(name = "copyright")
     val copyright: String?,
     @Json(name = "data")
-    val `data`: Data?,
+    val `data`: CharacterData?,
     @Json(name = "etag")
     val etag: String?,
     @Json(name = "status")
     val status: String?
-): Serializable
+) : Serializable
 
 

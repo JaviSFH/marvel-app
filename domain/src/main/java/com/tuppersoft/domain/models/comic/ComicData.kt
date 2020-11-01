@@ -1,11 +1,11 @@
-package com.tuppersoft.domain.models
+package com.tuppersoft.domain.models.comic
 
-import androidx.annotation.Keep
+
 import com.squareup.moshi.Json
-import java.io.Serializable
+import androidx.annotation.Keep
 
 @Keep
-data class Data(
+data class ComicData(
     @Json(name = "count")
     val count: Int? = 0,
     @Json(name = "limit")
@@ -13,10 +13,7 @@ data class Data(
     @Json(name = "offset")
     val offset: Int? = 0,
     @Json(name = "results")
-    val results: List<Characters> = listOf(),
+    val results: List<Comic>? = listOf(),
     @Json(name = "total")
     val total: Int? = 0
-): Serializable
-
-
-
+)

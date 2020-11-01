@@ -1,4 +1,4 @@
-package com.tuppersoft.domain.models
+package com.tuppersoft.domain.models.character
 
 
 import androidx.annotation.Keep

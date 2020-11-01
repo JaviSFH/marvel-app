@@ -1,11 +1,11 @@
-package com.tuppersoft.domain.models
+package com.tuppersoft.domain.models.character
 
 import androidx.annotation.Keep
 import com.squareup.moshi.Json
 import java.io.Serializable
 
 @Keep
-data class Comics(
+data class Events(
     @Json(name = "available")
     val available: Int?,
     @Json(name = "collectionURI")
@@ -15,7 +15,3 @@ data class Comics(
     @Json(name = "returned")
     val returned: Int?
 ): Serializable
-
-
-
-

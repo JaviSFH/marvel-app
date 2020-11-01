@@ -1,4 +1,4 @@
-package com.tuppersoft.domain.models
+package com.tuppersoft.domain.models.character
 
 import androidx.annotation.Keep
 import com.squareup.moshi.Json
@@ -28,5 +28,5 @@ data class Characters(
     val thumbnail: Thumbnail?,
     @Json(name = "urls")
     val urls: List<Url> = listOf()
-):Serializable
+) : Serializable
 
