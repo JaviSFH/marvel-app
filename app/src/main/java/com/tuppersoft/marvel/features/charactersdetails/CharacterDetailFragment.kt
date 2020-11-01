@@ -76,9 +76,13 @@ class CharacterDetailFragment : BaseFragment() {
 
     private fun handleErrors() {
         viewModel.failure.observe(viewLifecycleOwner, { value ->
-            handleErrorDialog(value.message.toString())
+            value?.let {
+                handleErrorDialog(value.message.toString())
+                viewModel.handleError(null)
+            }
         })
     }
+
 
     private fun initRecycler() {
         binding.rvComic.adapter = comicListAdapter

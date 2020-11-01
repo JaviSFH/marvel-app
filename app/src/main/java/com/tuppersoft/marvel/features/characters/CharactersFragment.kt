@@ -59,7 +59,10 @@ class CharactersFragment : BaseFragment() {
 
     private fun handleErrors() {
         viewModel.failure.observe(viewLifecycleOwner, { value ->
-            handleErrorDialog(value.message.toString())
+            value?.let {
+                handleErrorDialog(value.message.toString())
+                viewModel.handleError(null)
+            }
         })
     }
 
