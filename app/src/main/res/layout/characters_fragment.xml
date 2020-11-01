@@ -7,14 +7,17 @@
         android:layout_height="match_parent"
         tools:context=".features.characters.CharactersFragment">
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvCharacters"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/margin_48"
+            android:paddingTop="@dimen/margin_32"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
             tools:listitem="@layout/character_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

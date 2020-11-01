@@ -15,9 +15,13 @@
         <!-- Customize your theme here. -->
 
 
-        <item name="colorNameCharactersInCard">@color/white</item>
 
-    </style>
+        <item name="colorBackgroundOfContainerText">@color/black_9A000000</item>
+        <item name="colorBackgroundOfContainerCard">@color/black_33000000</item>
+        <item name="colorNameCharactersInCard">@color/white_fafafa</item>
+        <item name="colorDescriptionCharactersInCard">@color/warmGrey</item>
+
+ </style>
 
 </resources>
 

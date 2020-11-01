@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        app:shimmer_auto_start="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="?attr/selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorNameCharactersInCard"
+            app:cardCornerRadius="@dimen/margin_16" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</layout>

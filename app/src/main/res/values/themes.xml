@@ -14,15 +14,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 
-
-
-        <item name="colorNameCharactersInCard">@color/white</item>
-
-
+        <item name="colorBackgroundOfContainerText">@color/black_9A000000</item>
+        <item name="colorBackgroundOfContainerCard">@color/black_33000000</item>
+        <item name="colorNameCharactersInCard">@color/white_fafafa</item>
+        <item name="colorDescriptionCharactersInCard">@color/warmGrey</item>
 
     </style>
 
     <style name="Base.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
 
         <!--Fonts-->
         <item name="fontTypeThin">@font/sarabun_thin</item>

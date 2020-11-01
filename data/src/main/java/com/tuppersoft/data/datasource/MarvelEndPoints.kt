@@ -7,4 +7,7 @@ object MarvelEndPoints {
     const val PRIVATE_API_KEY = "95b4555888a6ebec24f0140f13772c07f9e3e140"
     const val characters: String = "/v1/public/characters"
 
+    const val PATH_PARAM_CHARACTER_ID = "characterId"
+
+    const val comicsByCharacter: String = "/v1/public/characters/{$PATH_PARAM_CHARACTER_ID}/comics"
 }

@@ -9,6 +9,9 @@
 
 
     <declare-styleable name="customColor">
+        <attr name="colorBackgroundOfContainerCard" format="color" />
+        <attr name="colorBackgroundOfContainerText" format="color" />
         <attr name="colorNameCharactersInCard" format="color" />
+        <attr name="colorDescriptionCharactersInCard" format="color" />
     </declare-styleable>
 </resources>

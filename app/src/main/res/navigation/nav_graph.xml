@@ -21,8 +21,9 @@
         <argument
             android:name="character"
             android:defaultValue="@null"
-            app:argType="com.tuppersoft.domain.models.Characters"
+            app:argType="com.tuppersoft.domain.models.character.Characters"
             app:nullable="true" />
+
     </fragment>
 
 </navigation>

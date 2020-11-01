@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="comic"
+            type="com.tuppersoft.domain.models.comic.Comic" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCharacter"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="4dp"
+        app:cardCornerRadius="@dimen/margin_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Thumbnails of character"
+                android:scaleType="centerCrop"
+                android:src="@{comic.thumbnail.path + '.' + comic.thumbnail.extension}"
+                tools:ignore="HardcodedText"
+                tools:src="@drawable/rsz_thum" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorBackgroundOfContainerCard" />
+
+            <TextView
+                android:id="@+id/nameCharacter"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginStart="@dimen/margin_16"
+                android:gravity="end"
+                android:text="@{comic.title}"
+                android:textColor="?attr/colorNameCharactersInCard"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Aqua man">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</layout>

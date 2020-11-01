@@ -4,7 +4,6 @@ import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.tuppersoft.marvel.core.extension.loadFromUrl
-import com.tuppersoft.marvel.core.extension.logd
 
 @BindingAdapter("android:src")
 fun setImageDrawable(imageView: ImageView, url: String?) {
@@ -14,7 +13,6 @@ fun setImageDrawable(imageView: ImageView, url: String?) {
     } else {
         url
     }
-
     imageView.loadFromUrl(newUrl)
 }
 
