@@ -10,7 +10,7 @@ Small android app to technical test using the marvel api. This application just 
 
 <p align="center">🌟🌟🌟 &nbsp; If you like this repository check the star 🌟🌟🌟</p>
 
-<p align="center"><img src="/images/preview.gif" align="center"/><img src="/images/error.gif" align="center"/></p>
+<p align="center"><img src="/images/preview.gif" align="center" width="250px"/>&nbsp;<img src="/images/error.gif" align="center" width="250px"/></p>
 
 </br>
 
