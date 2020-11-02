@@ -31,7 +31,6 @@ Small android app to technical test using the marvel api. This application just 
     - Data (with android sdk)
     - Domain (without android sdk)
   - Repository pattern
-
 - [OkHttp3 & Retrofit2](https://github.com/square/retrofit) - To handle network data and build a REST client.
 - [Moshi](https://github.com/square/moshi/) - A modern JSON library for Kotlin and Java.
 - [Glide](https://github.com/bumptech/glide) - Loading and caching images.
@@ -41,7 +40,6 @@ Small android app to technical test using the marvel api. This application just 
 - [Stetho](http://facebook.github.io/stetho/) - A debug bridge for Android applications
 - Unit test
 - [Mockito](https://site.mockito.org/) - For building mocks framework to unit tests in Java/Kotlin
-
 
 ## Architecture
 This app is based on MVVM architecture and a repository pattern with layers
