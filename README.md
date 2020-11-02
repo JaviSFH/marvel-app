@@ -9,6 +9,9 @@
 Small android app to technical test using the marvel api. This application just is a exercise to apply a model of clean architecture based on my experience and knowledge probably it could have mistakes.</p>
 
 <p align="center">🌟🌟🌟 &nbsp; If you like this repository check the star 🌟🌟🌟</p>
+
+<p align="center"><img src="/images/preview.gif" align="center"/><img src="/images/error.gif" align="center"/></p>
+
 </br>
 
 ## Technology stack
