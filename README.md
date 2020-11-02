@@ -49,10 +49,10 @@ This app is based on MVVM architecture and a repository pattern with layers
 
 # About myself
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/raul-rodriguez-concepcion/"><img alt="Linkedin" src="/images/linkedin.svg" width="100px"/></a>
-    <a href="https://github.com/rulogarcillan"><img alt="github" src="/images/github.png" width="100px"/></a>
-  <a href="https://play.google.com/store/apps/developer?id=Ra%C3%BAl%20R.&hl=es"><img alt="playstore" src="/images/playstore.png" width="100px"/></a>    
+<p align="left">
+  <a href="https://www.linkedin.com/in/raul-rodriguez-concepcion/"><img alt="Linkedin" src="/images/linkedin.svg" width="50px"/></a>
+    <a href="https://github.com/rulogarcillan"><img alt="github" src="/images/github.png" width="50px"/></a>
+  <a href="https://play.google.com/store/apps/developer?id=Ra%C3%BAl%20R.&hl=es"><img alt="playstore" src="/images/playstore.png" width="50px"/></a>    
 </p>
 
 # License
