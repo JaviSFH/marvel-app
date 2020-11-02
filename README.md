@@ -46,7 +46,7 @@ Small android app to technical test using the marvel api. This application just 
 ## Architecture
 This app is based on MVVM architecture and a repository pattern with layers
 
-![architecture]()
+<img alt="Linkedin" src="/images/architecture.svg"/>
 
 # About myself
 
