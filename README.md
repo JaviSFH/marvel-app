@@ -11,11 +11,6 @@ Small android app to technical test using the marvel api. This application just 
 <p align="center">🌟🌟🌟 &nbsp; If you like this repository check the star 🌟🌟🌟</p>
 </br>
 
-<p align="center">
-<img src="/images/preview.gif" align="right" width="30%"/>
-</p>
-
-
 ## Technology stack
 - [Marvel API](https://developer.marvel.com/documentation/getting_started)
 - Write in [Kotlin](https://kotlinlang.org/)
