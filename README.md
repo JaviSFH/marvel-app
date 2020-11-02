@@ -21,8 +21,9 @@ Small android app to technical test using the marvel api. This application just 
 - Minimum SDK level 23
 - [Hilt - Dagger](https://dagger.dev/hilt/) for dependency injection.
 - JetPack
-  - LiveData - notify domain layer data to views.
-  - Lifecycle - dispose of observing data when lifecycle state changes.
+  - Navigation - Navigation between activities / fragments
+  - LiveData - Notify between ViewModel to views.
+  - Lifecycle - Dispose of observing data when lifecycle state changes.
   - ViewModel - UI related data holder, lifecycle aware.
 - Architecture
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
