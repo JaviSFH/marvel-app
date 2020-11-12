@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import com.skydoves.transformationlayout.TransformationLayout
 import com.skydoves.transformationlayout.onTransformationEndContainer
 import com.tuppersoft.domain.models.character.Characters
@@ -15,6 +16,8 @@ import com.tuppersoft.marvel.core.platform.ShimmerItem
 import com.tuppersoft.marvel.databinding.CharacterDetailFragmentBinding
 import com.tuppersoft.marvel.features.charactersdetails.comiccover.ComicListAdapter
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class CharacterDetailFragment : BaseFragment() {
@@ -69,9 +72,15 @@ class CharacterDetailFragment : BaseFragment() {
     }
 
     private fun handleComicList() {
-        viewModel.comic.observe(viewLifecycleOwner, { value ->
-            comicListAdapter.submitList(value)
-        })
+
+        lifecycleScope.launch {
+            viewModel.comic.collect { value ->
+                value?.let {
+
+                comicListAdapter.submitList(value)
+                }
+            }
+        }
     }
 
     private fun handleErrors() {
@@ -82,7 +91,6 @@ class CharacterDetailFragment : BaseFragment() {
             }
         })
     }
-
 
     private fun initRecycler() {
         binding.rvComic.adapter = comicListAdapter

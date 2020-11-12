@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.skydoves.transformationlayout.addTransformation
@@ -21,6 +22,8 @@ import com.tuppersoft.marvel.features.charactersdetails.CharacterDetailFragment
 import com.tuppersoft.marvel.features.charactersdetails.CharacterDetailFragment.Companion.CHARACTERS_TAG
 import com.tuppersoft.marvel.features.charactersdetails.CharacterDetailFragment.Companion.PARAMS_TRANSFORMATION_LAYOUT
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class CharactersFragment : BaseFragment() {
@@ -126,18 +129,26 @@ class CharactersFragment : BaseFragment() {
     }
 
     private fun handleCharacterList() {
-        viewModel.characters.observe(viewLifecycleOwner, { value ->
 
-            val oldSize = listOfRecyclerView.size
-            listOfRecyclerView.clear()
-            listOfRecyclerView.addAll(value)
+        lifecycleScope.launch {
+            viewModel.characters.collect { value ->
+                value?.let {
+                    val oldSize = listOfRecyclerView.size
+                    listOfRecyclerView.clear()
+                    listOfRecyclerView.addAll(value)
 
-            if (oldSize != 0) {
-                charactersListAdapter.notifyItemRangeInserted(oldSize, charactersListAdapter.itemCount - oldSize)
-            } else {
-                charactersListAdapter.submitList(listOfRecyclerView)
-                charactersListAdapter.notifyDataSetChanged()
+                    if (oldSize != 0) {
+                        charactersListAdapter.notifyItemRangeInserted(
+                            oldSize,
+                            charactersListAdapter.itemCount - oldSize
+                        )
+                    } else {
+                        charactersListAdapter.submitList(listOfRecyclerView)
+                        charactersListAdapter.notifyDataSetChanged()
+                    }
+                }
+
             }
-        })
+        }
     }
 }
