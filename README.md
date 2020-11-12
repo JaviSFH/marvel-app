@@ -18,11 +18,11 @@ Small android app to technical test using the marvel api. This application just 
 - [Marvel API](https://developer.marvel.com/documentation/getting_started)
 - Write in [Kotlin](https://kotlinlang.org/)
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
+- [StateFlow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/index.html) - Notify between ViewModel to views.
 - Minimum SDK level 23
 - [Hilt - Dagger](https://dagger.dev/hilt/) for dependency injection.
 - JetPack
   - Navigation - Navigation between activities / fragments
-  - LiveData - Notify between ViewModel to views.
   - Lifecycle - Dispose of observing data when lifecycle state changes.
   - ViewModel - UI related data holder, lifecycle aware.
 - Architecture
